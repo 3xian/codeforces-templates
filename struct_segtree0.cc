@@ -1,16 +1,16 @@
-// Without lazy
+// without lazy
 
 #define lc (id<<1)
 #define rc (id<<1|1)
 #define mid (l+r>>1)
 
 void wash(int id) {
-	// Merge lc and rc
+	// merge lc and rc
 }
 
 void born(int l, int r, int id) {
 	if (l == r) {
-		// Init leaf
+		// init leaf
 		return;
 	}
 	born(l, mid, lc);
@@ -20,7 +20,7 @@ void born(int l, int r, int id) {
 
 void upd(int l, int r, int id, int p, int v) {
 	if (l == r) {
-		// Update leaf
+		// update leaf
 		return;
 	}
 	if (p <= mid) upd(l, mid, lc, p, v);
