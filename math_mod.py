@@ -6,4 +6,4 @@ def inverse(a, m):
         t = a / b
         a, b = b, a - t * b
         u, v = v, u - t * v
-    return (u % m + m) % m;
+    return (u % m + m) % m
