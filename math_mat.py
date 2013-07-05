@@ -22,8 +22,6 @@ class Matrix:
         return Matrix(ret)
 
     def pow(self, k, mod=None):
-        if k == 0:
-            return self.unit()
         a = Matrix(self.rows)
         r = self.unit()
         while k > 0:
