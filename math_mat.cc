@@ -1,7 +1,7 @@
 template <class T>
 class Matrix {
 public:
-  Matrix(int row, int col, const T* arr = NULL, const T& mod = T(0))
+	Matrix(int row, int col, const T* arr = NULL, const T& mod = T(0))
 			: _row(row), _col(col), _mat(new T[row*col]), _mod(mod) {
 		for (int i = 0; i < _row; i++)
 			for (int j = 0; j < _col; j++)
