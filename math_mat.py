@@ -13,7 +13,6 @@ class Matrix:
         n = len(other.rows)
         m = len(other.rows[0])
         trans = zip(*other.rows)
-        #ret = [[0] * m for i in range(n)]
         ret = [[0] * m for i in range(n)]
         for i, row in enumerate(ret):
             for j in xrange(m):
