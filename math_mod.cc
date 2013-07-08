@@ -1,5 +1,5 @@
 long long pow(long long n, long long k, long long mod) {
-  long long r = 1;
+	long long r = 1;
 	n %= mod;
 	while (k > 0) {
 		if (k & 1) r = r * n % mod;
