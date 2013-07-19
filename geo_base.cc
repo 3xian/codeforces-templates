@@ -5,7 +5,7 @@ inline int sign(double x) { return x<-EPS ? -1 : x>EPS; }
 
 class Point {
 public:
-    double x, y;
+	double x, y;
 	Point(double x=0.0, double y=0.0) : x(x), y(y) { }
 	bool operator <(const Point& rs) const { return x+EPS<rs.x || (x<rs.x+EPS && y+EPS<rs.y); }
 	bool operator ==(const Point& rs) const { return sign(x-rs.x)==0 && sign(y-rs.y)==0; }
