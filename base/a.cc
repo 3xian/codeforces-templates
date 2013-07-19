@@ -17,14 +17,14 @@
 #else
 #define logging(x) cerr << #x":" << x << endl
 #endif
-#define tpl_t template<typename T>
+#define TP template<typename T>
 #define stream(a) string _##a; getline(cin, _##a); stringstream a(_##a);
 using namespace std;
 int d4[4][2] = {{1,0}, {0,1}, {-1,0}, {0,-1}};
-tpl_t void lmax(T& a, const T& b) { if (a < b) a = b; }
-tpl_t void lmin(T& a, const T& b) { if (a > b) a = b; }
-tpl_t void usort(vector<T>& a) { sort(all(a)); a.erase(unique(a.begin(),a.end()),a.end()); }
-tpl_t void operator +=(vector<T>& v, const T& x) { v.push_back(x); }
+TP void lmax(T& a, const T& b) { if (a < b) a = b; }
+TP void lmin(T& a, const T& b) { if (a > b) a = b; }
+TP void usort(vector<T>& a) { sort(a.begin(),a.end()); a.erase(unique(a.begin(),a.end()), a.end()); }
+TP void operator +=(vector<T>& v, const T& x) { v.push_back(x); }
 string str(int i) { char s[16]; sprintf(s,"%d",i); return s; }
 //...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000
 
