@@ -29,6 +29,6 @@ string str(int i) { char s[16]; sprintf(s,"%d",i); return s; }
 //...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000
 
 int main() {
-	ios::sync_with_stdio(false);
-	return 0;
+    ios::sync_with_stdio(false);
+    return 0;
 }
