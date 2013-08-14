@@ -8,22 +8,22 @@ inline void push(int I) {
         change[I] = false;
         change[L] = true;
         change[R] = true;
-        // <<<
+        //<<<
         val[L] = val[I];
         val[R] = val[I];
-        // >>>
+        //>>>
     }
 }
 inline void merge(int I) {
-    // <<<
+    //<<<
     val[I] = val[L] < val[R] ? val[L] : val[R];
-    // >>>
+    //>>>
 }
 void update(int I, int l, int r, int p, const Value& v) {
     if (l == r) {
-        // <<<
+        //<<<
         val[I] = v;
-        // >>>
+        //>>>
         return;
     }
     push(I);
@@ -35,9 +35,9 @@ void update(int I, int l, int r, int p, const Value& v) {
 void range_update(int I, int l, int r, int x, int y, const Value& v) {
     if (l == x and r == y) {
         change[I] = true;
-        // <<<
+        //<<<
         val[I] = v;
-        // >>>
+        //>>>
         return;
     }
     push(I);
@@ -52,9 +52,9 @@ void range_update(int I, int l, int r, int x, int y, const Value& v) {
 }
 Value query(int I, int l, int r, int p) {
     if (l == r) {
-        // <<<
+        //<<<
         return val[I];
-        // >>>
+        //>>>
     }
     push(I);
     int m = l + r >> 1;
@@ -64,9 +64,9 @@ Value query(int I, int l, int r, int p) {
 }
 Value range_query(int I, int l, int r, int x, int y) {
     if (l == x and r == y) {
-        // <<<
+        //<<<
         return val[I];
-        // >>>
+        //>>>
     }
     push(I);
     int m = l + r >> 1;
@@ -78,9 +78,9 @@ Value range_query(int I, int l, int r, int x, int y) {
     } else {
         Value a = range_query(L, l, m, x, m);
         Value b = range_query(R, m+1, r, m+1, y);
-        // <<<
+        //<<<
         res = min(a, b);
-        // >>>
+        //>>>
     }
     return res;
 }
