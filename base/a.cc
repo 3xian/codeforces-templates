@@ -1,16 +1,4 @@
-#include <cassert>
-#include <cmath>
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
-#include <iomanip>
-#include <iostream>
-#include <limits>
-#include <map>
-#include <queue>
-#include <set>
-#include <sstream>
-#include <vector>
+#include <bits/stdc++.h>
 #define range(i, n) for (int i=0; i<(n); ++i)
 #ifdef ONLINE_JUDGE
 #define logging(x)
