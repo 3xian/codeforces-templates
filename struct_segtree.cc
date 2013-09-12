@@ -58,7 +58,6 @@ Value query(int I, int l, int r, int p) {
     }
     push(I);
     int m = l + r >> 1;
-    Value res;
     if (p <= m) return query(L, l, m, p);
     else return query(R, m+1, r, p);
 }
