@@ -1,3 +1,4 @@
+/*{{{*/
 #include <cassert>
 #include <cmath>
 #include <cstdio>
@@ -19,6 +20,7 @@
 #endif
 #define TP template<typename T>
 #define stream(a) string _##a; getline(cin, _##a); stringstream a(_##a);
+#define V vector
 using namespace std;
 int d4[4][2] = {{1,0}, {0,1}, {-1,0}, {0,-1}};
 TP void lmax(T& a, const T& b) { if (a < b) a = b; }
@@ -26,7 +28,8 @@ TP void lmin(T& a, const T& b) { if (a > b) a = b; }
 TP void usort(vector<T>& a) { sort(a.begin(),a.end()); a.erase(unique(a.begin(),a.end()), a.end()); }
 TP void operator +=(vector<T>& v, const T& x) { v.push_back(x); }
 string str(int i) { char s[16]; sprintf(s,"%d",i); return s; }
-//...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000...ooo000
+typedef pair<int, int> P;
+/*}}}*/
 
 int main() {
     ios::sync_with_stdio(false);
