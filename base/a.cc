@@ -1,14 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-void io_trick() { ios::sync_with_stdio(false); cin.tie(NULL); }
+#define M std::map
+#define S std::set
+#define V std::vector
+#define ALL(a) (a).begin(),(a).end()
+void setio() { ios::sync_with_stdio(false); cin.tie(NULL); }
 string itos(int value) { char buf[12]; sprintf(buf, "%d", value); return buf; }
-template<class T> void sort(vector<T>& a){ sort(a.begin(), a.end()); }
-template<class T> void uniq(vector<T>& a){ sort(a); a.erase(unique(a.begin(),a.end()),a.end()); }
+template<class T> void uniq(V<T>& a){ a.erase(unique(ALL(a)), a.end()); }
+template<class T> void operator +=(V<T> &a, const T& x){ a.push_back(x); }
 
 int main() {
-    io_trick();
-
+    setio();
     // Start here
-
     return 0;
 }
